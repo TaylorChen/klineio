@@ -51,7 +51,9 @@ exchange:
 
 price_monitor:
   default_threshold: 0.20
-  top_n_symbols: 50
+  top_n_symbols: 20  # Reduced from 50 to 20 to improve performance
+  timeout_seconds: 300 # Increased timeout to 5 minutes
+  api_request_delay_ms: 500 # Reduced delay to 500ms to improve performance
 
 proxy:
   http: ""
